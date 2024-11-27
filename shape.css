@@ -1,34 +1,64 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: red;
+    background: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
+
 .login-form {
-    background: #fff;
+    background: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
-.login-form h2 {
+
+h2 {
+    text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
-.login-form input[type="text"],
-.login-form input[type="password"] {
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 5px;
 }
-.login-form input[type="submit"] {
-    background-color: #5cb85c;
-    color: #fff;
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }

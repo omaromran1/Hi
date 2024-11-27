@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="shape.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login11</title>
-    
+    <title>Login</title>
 </head>
 <body>
     <form class="login-form" action="/login" method="post">
         <h2>Login</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required placeholder="Enter username">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required placeholder="Enter password">
         <input type="submit" value="Login">
+        <br>
+        <br>
+        <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
     </form>
 </body>
 </html>
