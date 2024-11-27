@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="shape.css">
+<html lang="en">
 <head>
-    <title>
-        My First Page
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login11</title>
+    
 </head>
 <body>
-    <p>
-        ALL INFO IS HERE
-    </p>
-    <h3>
-        We Will start with this!!
-    </h3>
-    <p>
-        UPDATED
-    </p>
-    <img src="messi.jpg" alt="ERROR" height="400px" width="400px">
+    <form class="login-form" action="/login" method="post">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
 </body>
+</html>
