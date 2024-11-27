@@ -62,3 +62,24 @@ input[type="submit"]:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+/* Add this to shape.css */
+.strength {
+   
+    font-size: 14px;
+    margin-top: 5px;
+}
+.strength.weak {
+    color: red;
+}
+.strength.medium {
+    color: orange;
+}
+.strength.strong {
+    color: green;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

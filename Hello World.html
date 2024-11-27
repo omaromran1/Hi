@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="shape.css">
+<script src="password.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
-    <form class="login-form" action="/login" method="post">
+    <form class="login-form" action="http://localhost:3000/login" method="post">
         <h2>Login</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required placeholder="Enter username">
+        <input type="text" id="username" name="username" required placeholder="Enter username" autocomplete="username">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required placeholder="Enter password">
+        <input type="password" id="password" name="password" required placeholder="Enter password" autocomplete="new-password">
+        <div id="strength-message" class="strength">Password strength: <span id="strength-value">Weak</span></div>
+        <div id="error-message" class="error" style="display:none;color:red;">Password is too weak!</div>
         <input type="submit" value="Login">
         <br>
         <br>
